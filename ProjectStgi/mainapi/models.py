@@ -1,0 +1,48 @@
+from django.db import models
+
+class hbDatanew(models.Model):
+    class Meta:
+        app_label = 'mainapi'
+    field1 = models.CharField(max_length=255)
+    field2 = models.CharField(max_length=255)
+    field3 = models.CharField(max_length=255)
+    field4 = models.CharField(max_length=255)
+    field5 = models.CharField(max_length=255)
+    field6 = models.CharField(max_length=255)
+    field7 = models.CharField(max_length=255)
+    field8 = models.CharField(max_length=255)
+    field9 = models.CharField(max_length=255)
+    field10 = models.CharField(max_length=255)
+    field11 = models.CharField(max_length=255)
+    # field11 = models.FloatField()
+    field12 = models.CharField(max_length=255)
+    field13 = models.CharField(max_length=255)
+    field14 = models.CharField(max_length=255)
+    field15 = models.CharField(max_length=255)
+    field16 = models.CharField(max_length=255)
+    field17 = models.CharField(max_length=255)
+    field18 = models.CharField(max_length=255)
+    field19 = models.CharField(max_length=255)
+    field20 = models.CharField(max_length=255)
+    field21 = models.CharField(max_length=255)
+    field22 = models.FloatField()
+    field23 = models.FloatField()
+    field24 = models.CharField(max_length=255)
+    field25 = models.FloatField()
+    field26 = models.CharField(max_length=255)
+    field27 = models.CharField(max_length=255)
+    field28 = models.FloatField()
+    field29 = models.CharField(max_length=255)
+    field30 = models.FloatField()
+    field31 = models.FloatField()
+    field32 = models.CharField(max_length=255)
+    field33 = models.CharField(max_length=255)
+    field34 = models.CharField(max_length=255)
+    field35 = models.CharField(max_length=255)
+    field36 = models.CharField(max_length=255)
+    field37 = models.CharField(max_length=255)
+    field38 = models.CharField(max_length=255)
+    field39 = models.CharField(max_length=255)
+# Create your models here.
+
+

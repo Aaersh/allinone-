@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+  </head>
+  <body>
+    <div class="grid-container">
+
+
+      <aside id="sidebar">
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="Landing.html" target="_blank">
+              <div class="text-center"> <!-- Center the content -->
+                <h4 class="font-weight-bold"> <b>AnalyticsHub</b></h4>
+              </div>
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <div class="text-center"> <!-- Center the content -->
+                <p class="font-weight-bold">2016</p>
+              </div>
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <div class="text-center"> <!-- Center the content -->
+                <p class="font-weight-bold">2017</p>
+              </div>
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <div class="text-center"> <!-- Center the content -->
+                <p class="font-weight-bold">2018</p>
+              </div>
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <div class="text-center"> <!-- Center the content -->
+                <p class="font-weight-bold">2019</p>
+              </div>
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <div class="text-center"> <!-- Center the content -->
+                <p class="font-weight-bold">Cummilative</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">DASHBOARD</p>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Number of Results</p>
+            </div>
+            <div>
+              
+            </div>
+            <span class="text-primary font-weight-bold">{{number}}</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-orange">Mean Salary</p>
+            </div>
+            <span class="text-primary font-weight-bold">{{mean_s}}</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-green">Median Salary</p>
+            </div>
+            <span class="text-primary font-weight-bold">{{median_s}}</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-red">25% Percentile Salary</p>
+            </div>
+            <span class="text-primary font-weight-bold">{{per25}}</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary2">75% Percentile Salary</p>
+            </div>
+            <span class="text-primary font-weight-bold">{{per75}}</span>
+          </div>
+
+        </div>
+
+        
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    {% comment %} <script src="js/scripts.js"></script> {% endcomment %}
+  </body>
+</html>
